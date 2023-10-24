@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './../pages/home/Home.jsx';
 import Product from './../pages/product/Product.jsx';
 import Pricing from './../pages/pricing/Pricing.jsx'
-import PageNotFound from "../pages/not_found/PageNotFound.jsx";
+import PageNotFound from "./../pages/not_found/PageNotFound.jsx";
 
 
 export default function App() {
