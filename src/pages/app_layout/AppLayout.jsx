@@ -1,13 +1,17 @@
 import React from 'react';
-import AppNav from "../../components/app_nav/AppNav.jsx";
+
+import Map from "../../components/map/Map.jsx";
+import Sidebar from "../../components/sidebar/Sidebar.jsx"
+import User from "../../components/user/User.jsx";
 import styles from './AppLayout.module.css'
 
 export default function AppLayout() {
 
     return (
         <div className={styles.app}>
-            <AppNav />
-            <h2>AppLayout</h2>
+            <Sidebar />
+            <Map />
+            <User />
         </div>
 
     );
