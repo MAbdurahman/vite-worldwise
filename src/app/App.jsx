@@ -4,6 +4,7 @@ import Home from './../pages/home/Home.jsx';
 import Product from './../pages/product/Product.jsx';
 import Pricing from './../pages/pricing/Pricing.jsx'
 import PageNotFound from "./../pages/not_found/PageNotFound.jsx";
+import Login from './../pages/login/Login.jsx';
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="product" element={<Product />} />
                     <Route path="pricing" element={<Pricing />} />
+                    <Route path="login" element={<Login />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Route>
             </Routes>
