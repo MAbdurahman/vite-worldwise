@@ -14,11 +14,16 @@ export default function App() {
         <BrowserRouter>
             <Routes>
                 <Route>
-                    <Route path="/" element={<Home />} />
+                    <Route index element={<Home />} />
                     <Route path="product" element={<Product />} />
                     <Route path="pricing" element={<Pricing />} />
                     <Route path="login" element={<Login />} />
-                    <Route path="app" element={<AppLayout />} />
+                    <Route path="app" element={<AppLayout />} >
+                        <Route index element={<Navigate replace to="cities" />} />
+                        <Route path="cities" element={<p>List Of Cities</p>} />
+                        <Route path="countries" element={<p>List Of Countries</p>} />
+                        <Route path="form" element={<p>Form</p>} />
+                    </Route>
                     <Route path="*" element={<PageNotFound />} />
                 </Route>
             </Routes>
