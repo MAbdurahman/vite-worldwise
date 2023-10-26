@@ -7,7 +7,9 @@ import PageNotFound from "./../pages/not_found/PageNotFound.jsx";
 import Login from './../pages/login/Login.jsx';
 import AppLayout from "../pages/app_layout/AppLayout.jsx";
 import CityList from "../components/city_list/CityList.jsx";
+import City from "../components/city/City.jsx";
 import CountryList from "../components/country_list/CountryList.jsx";
+
 
 export default function App() {
     const BASE_URL = `https://mabdurahman.github.io/questions-api/data`;
@@ -46,6 +48,7 @@ export default function App() {
                         {/*<Route index element={<Navigate replace to="cities" />} />*/}
                         <Route index element={<CityList cities={cities} isLoading={isLoading} />} />
                         <Route path="cities" element={<CityList cities={cities} isLoading={isLoading} />} />
+                        <Route path="cities/:id" element={<City />} />
                         <Route path="countries" element={<CountryList cities={cities} isLoading={isLoading} />} />
                         <Route path="form" element={<p>Form</p>} />
                     </Route>
