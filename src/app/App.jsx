@@ -9,6 +9,7 @@ import AppLayout from "../pages/app_layout/AppLayout.jsx";
 import CityList from "../components/city_list/CityList.jsx";
 import City from "../components/city/City.jsx";
 import CountryList from "../components/country_list/CountryList.jsx";
+import Form from "../layouts/form/Form.jsx";
 
 
 export default function App() {
@@ -50,7 +51,7 @@ export default function App() {
                         <Route path="cities" element={<CityList cities={cities} isLoading={isLoading} />} />
                         <Route path="cities/:id" element={<City />} />
                         <Route path="countries" element={<CountryList cities={cities} isLoading={isLoading} />} />
-                        <Route path="form" element={<p>Form</p>} />
+                        <Route path="form" element={<Form />} />
                     </Route>
                     <Route path="*" element={<PageNotFound />} />
                 </Route>
