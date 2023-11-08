@@ -23,8 +23,8 @@ export default function City() {
     return (
         <div className={styles.city}>
             <div className={styles.row}>
-                <h5>City ID -> {id}</h5>
-                <h6>Position -> lat: {lat}, lng: {lng}</h6>
+                <h5>City ID ⇒ {id}</h5>
+                <h6>Position ⇒ lat: {lat}, lng: {lng}</h6>
             </div>
         </div>
 
