@@ -8,6 +8,8 @@ import styles from './CityList.module.css';
 export default function CityList() {
 const {cities, isLoading} = useCities();
 
+    console.log(cities)
+
     if (isLoading) {
         return <Spinner />
     }
